@@ -1,3 +1,3 @@
 module.exports = function (msg, args) {
-  msg.channel.send("sup slut");
+  msg.channel.send("Hi there!");
 };

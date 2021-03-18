@@ -1,4 +1,10 @@
 module.exports = function (msg, args) {
+  if (!args[0]) {
+    msg.channel.send(
+      "You need to provide word to define after !define. Example: !define mask"
+    );
+    return;
+  }
   var axios = require("axios").default;
   const defineKey = process.env.DEFINEAPIKEY;
   console.log(defineKey);
