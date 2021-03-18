@@ -14,7 +14,9 @@ client.on("guildMemberAdd", (member) => {
     (ch) => ch.name === "member-log"
   );
   if (!channel) return;
-  channel.send(`Welcome to the server, ${member}`);
+  channel.send(
+    `Welcome to the server, ${member}! If you want to know what our bot can do, just type !help.`
+  );
 });
 const commandHandler = require("./commands");
 client.on("message", commandHandler);
