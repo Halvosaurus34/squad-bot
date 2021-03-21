@@ -6,5 +6,5 @@ module.exports = function (msg, args) {
     return;
   }
   console.log(args);
-  msg.channel.send(Math.floor(Math.random() * args));
+  msg.channel.send(Math.floor(Math.random() * args) + 1);
 };
